@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <!-- pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+            title="Password must contain at least one number, one alphabet,one symbol, and be atleast 8 characters long" required /> -->
+
+            <label for="password">Re-Type Password:</label>
+            <input type="password" id="repassword" name="repassword" required />
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="Date" id="Date Of Birth" name="Date Of Birth" required />
+
+            <label for="Mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+         
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="gender" required >
+
+            <!-- Select option value -->
+
+            <option value="male"> Male </option>
+            <option value="female"> Female </option>
+            <option value="other"> Other </option>
+        </select>
+            <button type="submit">  Submit </button>    
+         
+            </form>
+    </div>
+</body>
+</html>
